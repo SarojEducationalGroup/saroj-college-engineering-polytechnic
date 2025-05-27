@@ -100,16 +100,15 @@ export default function Footer() {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-blue-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300 text-sm">+91 22 1234 5678</p>
-                  <p className="text-gray-300 text-sm">+91 22 8765 4321</p>
+                  <p className="text-gray-300 text-sm">+91 9555699988</p>
+                  <p className="text-gray-300 text-sm">+91 9810054878</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-300 text-sm">info@sarojcollege.edu.in</p>
-                  <p className="text-gray-300 text-sm">admissions@sarojcollege.edu.in</p>
+                  <p className="text-gray-300 text-sm">admission.cell@seglko.org</p>
                 </div>
               </div>
 
