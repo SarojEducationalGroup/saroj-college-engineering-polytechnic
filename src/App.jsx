@@ -12,11 +12,12 @@ import ResearchPublications from './pages/ResearchPublications'
 import ContactPage from './pages/ContactUs'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions'
+import NotFoundPage from './pages/NotFound'
 
 export default function App() {
   return (
    <Routes>
-    <Route path='*' element={<div className='text-center text-2xl font-bold'>Page Not Found</div>} />
+    <Route path='*' element={<NotFoundPage/>} />
    <Route path='/' element={<HomePage/>} />
 
     <Route path='/chairman-message' element={<ChairmanMessage/>} />
