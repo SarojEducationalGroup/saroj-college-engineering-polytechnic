@@ -7,6 +7,8 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
+  const MotionLink = motion(Link);
+
   const handleMouseEnter = (dropdown) => {
     setActiveDropdown(dropdown);
   };
@@ -124,7 +126,7 @@ export default function Header() {
                             label: "Vision & Mission",
                           },
                         ].map((item, index) => (
-                          <Link
+                          <MotionLink
                             key={item.href}
                             to={item.href}
                             initial={{ opacity: 0, x: 0 }}
@@ -134,7 +136,7 @@ export default function Header() {
                             className="block px-4 py-3 text-sm text-gray-700 hover:text-blue-600 transition-all duration-200"
                           >
                             {item.label}
-                          </Link>
+                          </MotionLink>
                         ))}
                       </div>
                     </motion.div>
@@ -143,13 +145,13 @@ export default function Header() {
               </div>
 
               {/* Courses Dropdown */}
-              <Link
+              <MotionLink
                 to="/courses-offered"
                 whileHover={{ scale: 1.05 }}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50"
               >
                 Courses
-              </Link>
+              </MotionLink>
 
               {/* Research and Development Dropdown */}
               <div
@@ -200,7 +202,7 @@ export default function Header() {
                             label: "Research & Publication",
                           },
                         ].map((item, index) => (
-                          <Link
+                          <MotionLink
                             key={item.href}
                             to={item.href}
                             initial={{ opacity: 0, x: 0 }}
@@ -210,7 +212,7 @@ export default function Header() {
                             className="block px-4 py-3 text-sm text-gray-700 hover:text-blue-600 transition-all duration-200"
                           >
                             {item.label}
-                          </Link>
+                          </MotionLink>
                         ))}
                       </div>
                     </motion.div>
@@ -219,13 +221,13 @@ export default function Header() {
               </div>
 
               {/* Contact Us */}
-              <Link
+              <MotionLink
                 to="/contact-us"
                 whileHover={{ scale: 1.05 }}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50"
               >
                 Contact Us
-              </Link>
+              </MotionLink>
             </nav>
 
             {/* Apply Now Button */}
@@ -356,13 +358,13 @@ export default function Header() {
                 </div>
 
                 {/* Mobile Courses Dropdown */}
-                <Link
+                <MotionLink
                   to="/courses-offered"
                   whileHover={{ backgroundColor: "#f9fafb" }}
                   className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-blue-600 rounded-lg transition-all duration-200"
                 >
                   Courses
-                </Link>
+                </MotionLink>
 
                 {/* Mobile Research Dropdown */}
                 <div>
@@ -427,13 +429,13 @@ export default function Header() {
                 </div>
 
                 {/* Mobile Contact Us */}
-                <Link
+                <MotionLink
                   to="/contact"
                   whileHover={{ backgroundColor: "#f9fafb" }}
                   className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-blue-600 rounded-lg transition-all duration-200"
                 >
                   Contact Us
-                </Link>
+                </MotionLink>
 
                 {/* Mobile Apply Now Button */}
                 <div className="pt-4">

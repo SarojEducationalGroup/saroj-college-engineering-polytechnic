@@ -10,6 +10,8 @@ import TechnologiesDeveloped from './pages/TechnologiesDeveloped'
 import AwardWinningProjects from './pages/AwardProjects'
 import ResearchPublications from './pages/ResearchPublications'
 import ContactPage from './pages/ContactUs'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsAndConditions from './pages/TermsAndConditions'
 
 export default function App() {
   return (
@@ -26,6 +28,9 @@ export default function App() {
     <Route path='/award-winning-projects' element={<AwardWinningProjects/>} />
     <Route path='/research-and-publications' element={<ResearchPublications/>} />
     <Route path='/contact-us' element={<ContactPage/>} />
+    <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+    <Route path='/terms-and-conditions' element={<TermsAndConditions/>} />
+
 
 
 

@@ -11,8 +11,11 @@ import { IoIosRibbon, IoIosRocket } from "react-icons/io";
 import { GiTeacher } from "react-icons/gi";
 import AboutImg from "../assets/AboutImg.jpeg";
 import ExcellenceBg from "../assets/ExcellenceSectionBg2.png";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
+
+  const MotionLink = motion(Link);
   // Enhanced animations with spring physics
   const fadeIn = {
     hidden: { opacity: 0, y: 40 },
@@ -156,7 +159,8 @@ const AboutPage = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="flex flex-wrap justify-center gap-6"
             >
-              <motion.button
+              <MotionLink
+              to='/courses-offered'
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3)",
@@ -165,7 +169,7 @@ const AboutPage = () => {
                 className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-xl"
               >
                 Explore Programs
-              </motion.button>
+              </MotionLink>
             </motion.div>
           </motion.div>
         </motion.div>
@@ -247,16 +251,18 @@ const AboutPage = () => {
               </div>
 
               <div className="flex flex-wrap gap-6">
-                <motion.button
-                  whileHover={{
+                <a
+                  href="https://seglko.in8.nopaperforms.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whilehover={{
                     scale: 1.03,
                     boxShadow: "0 8px 20px -5px rgba(59, 130, 246, 0.5)",
                   }}
-                  whileTap={{ scale: 0.97 }}
                   className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white px-8 py-4 rounded-xl font-bold transition-all duration-300 shadow-lg"
                 >
                   Apply Now
-                </motion.button>
+                </a>
               </div>
             </div>
 
@@ -296,12 +302,11 @@ const AboutPage = () => {
                 <div className="flex items-center mb-4">
                   <FaFlask className="text-blue-600 text-2xl mr-3" />
                   <h4 className="font-bold text-gray-800">
-                  Innovation in Action
-
+                    Innovation in Action
                   </h4>
                 </div>
                 <p className="text-gray-600 text-sm">
-                50+ breakthroughs by students and faculty
+                  50+ breakthroughs by students and faculty
                 </p>
               </motion.div>
             </motion.div>
@@ -552,11 +557,10 @@ const AboutPage = () => {
                 href="https://seglko.in8.nopaperforms.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                whileHover={{
+                whilehover={{
                   scale: 1.05,
                   boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.3)",
                 }}
-                whileTap={{ scale: 0.95 }}
                 className="bg-yellow-400 hover:bg-yellow-300 text-blue-900 px-10 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-xl"
               >
                 Apply for Admission

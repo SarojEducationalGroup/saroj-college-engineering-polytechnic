@@ -7,13 +7,14 @@ import {
   Clock,
 } from "lucide-react"
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* College Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
@@ -53,101 +54,31 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                <Link to="/about-scep" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
                   About SCEP
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#admissions" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  Admissions
-                </a>
+                <Link to="/courses-offered" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Courses
+                </Link>
               </li>
               <li>
-                <a href="#academics" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  Academics
-                </a>
+                <Link to="/contact-us" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                  Contact Us
+                </Link>
               </li>
+            
               <li>
-                <a href="#faculty" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  Faculty
-                </a>
-              </li>
-              <li>
-                <a href="#placements" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  Placements
-                </a>
-              </li>
-              <li>
-                <a href="#campus-life" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
+                <Link to="#campus-life" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
                   Campus Life
-                </a>
+                </Link>
               </li>
-              <li>
-                <a href="#news" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                  News & Events
-                </a>
-              </li>
+              
             </ul>
           </div>
 
-          {/* Academic Programs */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Academic Programs</h4>
-            <div className="space-y-3">
-              <div>
-                <h5 className="text-sm font-medium text-blue-400 mb-1">Engineering</h5>
-                <ul className="space-y-1">
-                  <li>
-                    <a
-                      href="#computer-engineering"
-                      className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
-                    >
-                      Computer Engineering
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#civil-engineering"
-                      className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
-                    >
-                      Civil Engineering
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#mechanical-engineering"
-                      className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
-                    >
-                      Mechanical Engineering
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h5 className="text-sm font-medium text-blue-400 mb-1">Polytechnic</h5>
-                <ul className="space-y-1">
-                  <li>
-                    <a href="#diploma-computer" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                      Diploma in Computer
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#diploma-civil" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                      Diploma in Civil
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#diploma-mechanical"
-                      className="text-gray-300 hover:text-blue-400 transition-colors text-sm"
-                    >
-                      Diploma in Mechanical
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      
 
           {/* Contact Information */}
           <div className="space-y-4">
@@ -182,18 +113,7 @@ export default function Footer() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3">
-                <Clock className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-300 text-sm">
-                    Office Hours:
-                    <br />
-                    Mon - Fri: 9:00 AM - 5:00 PM
-                    <br />
-                    Sat: 9:00 AM - 1:00 PM
-                  </p>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -210,15 +130,13 @@ export default function Footer() {
             </div>
             <div className="mt-4 md:mt-0">
               <div className="flex justify-center md:justify-end space-x-6">
-                <a href="#privacy" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
                   Privacy Policy
-                </a>
-                <a href="#terms" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
-                  Terms of Service
-                </a>
-                <a href="#sitemap" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
-                  Sitemap
-                </a>
+                </Link>
+                <Link to="/terms-and-conditions" className="text-gray-400 hover:text-blue-400 text-sm transition-colors">
+                  Terms and Conditions
+                </Link>
+                
               </div>
             </div>
           </div>

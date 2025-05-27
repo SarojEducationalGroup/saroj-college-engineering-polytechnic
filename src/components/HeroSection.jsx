@@ -106,7 +106,9 @@ export default function HeroSection() {
             {/* Enhanced CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                to="/apply"
+                to="https://seglko.in8.nopaperforms.com/"
+                target='_blank'
+                rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -115,7 +117,7 @@ export default function HeroSection() {
               </Link>
 
               <Link
-                to="/courses"
+                to="/courses-offered"
                 className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 hover:border-white/50 backdrop-blur-sm transition-all duration-300 hover:shadow-lg"
               >
                 Explore Courses
@@ -185,7 +187,7 @@ export default function HeroSection() {
       </div>
 
       {/* Enhanced Custom Styles */}
-      <style jsx global>{`
+      <style>{`
         @keyframes blob {
           0% { transform: translate(0px, 0px) scale(1); }
           33% { transform: translate(30px, -50px) scale(1.1); }
