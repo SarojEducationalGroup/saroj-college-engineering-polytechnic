@@ -22,7 +22,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-lg">SCEP</span>
               </div>
               <div>
-                <h3 className="text-lg font-bold">Saroj College</h3>
+                <h3 className="text-lg font-bold">Saroj College Of</h3>
                 <p className="text-sm text-gray-300">Engineering & Polytechnic</p>
               </div>
             </div>
@@ -88,11 +88,8 @@ export default function Footer() {
                 <MapPin className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300 text-sm">
-                    Chand Sarai, Near Gosainganj,
-                    <br />
-                    Sultanpur Road, Lucknow,
-                    <br />
-                    Uttar Pradesh, 226006
+                  12th KM Stone, Lucknow - Sultanpur Rd,<br />
+Ahmamau, Uttar Pradesh 226021
                   </p>
                 </div>
               </div>

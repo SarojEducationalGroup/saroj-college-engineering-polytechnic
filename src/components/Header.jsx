@@ -47,7 +47,7 @@ export default function Header() {
 
   return (
     <motion.header className="bg-white shadow-xl  border-gradient-to-r from-blue-600 to-indigo-600 sticky top-0 z-50 backdrop-blur-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo and College Name */}
           <motion.div
@@ -85,8 +85,8 @@ export default function Header() {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <nav className="flex space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
+            <nav className="flex space-x-6">
               {/* About Dropdown */}
               <div
                 className="relative"
@@ -151,6 +151,15 @@ export default function Header() {
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50"
               >
                 Courses
+              </MotionLink>
+
+                {/* Placements */}
+                <MotionLink
+                to="/placements"
+                whileHover={{ scale: 1.05 }}
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50"
+              >
+                Placements
               </MotionLink>
 
               {/* Research and Development Dropdown */}
@@ -357,7 +366,7 @@ export default function Header() {
                   </AnimatePresence>
                 </div>
 
-                {/* Mobile Courses Dropdown */}
+                {/* Mobile Courses */}
                 <MotionLink
                   to="/courses-offered"
                   whileHover={{ backgroundColor: "#f9fafb" }}
@@ -365,6 +374,16 @@ export default function Header() {
                 >
                   Courses
                 </MotionLink>
+
+                 {/* Placements */}
+                 <MotionLink
+                  to="/placements"
+                  whileHover={{ backgroundColor: "#f9fafb" }}
+                  className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-blue-600 rounded-lg transition-all duration-200"
+                >
+                  Placements
+                </MotionLink>
+                
 
                 {/* Mobile Research Dropdown */}
                 <div>

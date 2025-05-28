@@ -13,6 +13,7 @@ import ContactPage from './pages/ContactUs'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions'
 import NotFoundPage from './pages/NotFound'
+import PlacementPage from './pages/PlacementsPage'
 
 export default function App() {
   return (
@@ -31,6 +32,8 @@ export default function App() {
     <Route path='/contact-us' element={<ContactPage/>} />
     <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
     <Route path='/terms-and-conditions' element={<TermsAndConditions/>} />
+    <Route path='/placements' element={<PlacementPage/>} />
+
 
 
 
