@@ -7,6 +7,7 @@ export default function ContactUs() {
   const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
   const [formData, setFormData] = useState({
+    college : "SCEP",
     name: "",
     email: "",
     phone: "",
@@ -38,6 +39,7 @@ export default function ContactUs() {
       // Google Apps Script returns no JSON in no-cors mode, so we assume success
       toast.success("Thank you for contacting us! We'll respond soon.");
       setFormData({
+        college : "SCEP",
         name: "",
         email: "",
         phone: "",
