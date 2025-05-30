@@ -14,6 +14,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions'
 import NotFoundPage from './pages/NotFound'
 import PlacementPage from './pages/PlacementsPage'
+import FeesPayment from './pages/FeesPortal'
 
 export default function App() {
   return (
@@ -33,6 +34,9 @@ export default function App() {
     <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
     <Route path='/terms-and-conditions' element={<TermsAndConditions/>} />
     <Route path='/placements' element={<PlacementPage/>} />
+    <Route path='/fees-portal' element={<FeesPayment/>} />
+
+
 
 
 

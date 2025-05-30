@@ -228,6 +228,14 @@ export default function Header() {
                   )}
                 </AnimatePresence>
               </div>
+              {/* Fees  */}
+              <MotionLink
+                to="/fees-portal"
+                whileHover={{ scale: 1.05 }}
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50"
+              >
+                Fees Payment
+              </MotionLink>
 
               {/* Contact Us */}
               <MotionLink
@@ -446,6 +454,15 @@ export default function Header() {
                     )}
                   </AnimatePresence>
                 </div>
+
+                {/* Placements */}
+                <MotionLink
+                  to="/fees-portal"
+                  whileHover={{ backgroundColor: "#f9fafb" }}
+                  className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-blue-600 rounded-lg transition-all duration-200"
+                >
+                  Fees Payment
+                </MotionLink>
 
                 {/* Mobile Contact Us */}
                 <MotionLink

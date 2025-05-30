@@ -50,6 +50,11 @@ const TopHeader = () => {
           </div>
           <div className="flex items-center space-x-4">
             <Link
+              to="/fees-portal"
+              className="hover:text-red-800 transition-colors drop-shadow-md bg-red-600 px-4 py-1 shadow-2xl rounded-xl">
+                Pay Fee Online
+              </Link>
+            <Link
               to="/privacy-policy"
               className="hover:text-indigo-300 transition-colors"
             >
