@@ -4,8 +4,7 @@ import { useLocation } from "react-router-dom";
 const PopupForm = () => {
   const [scriptLoaded, setScriptLoaded] = useState(false);
   const location = useLocation();
-  const isHomepage = location.pathname === "/"; // Adjust if your homepage has different path
-
+  const isHomepage = location.pathname === "/"; 
   useEffect(() => {
     // Track if we've shown the popup in this session
     const hasShownPopup = sessionStorage.getItem('hasShownPopup');

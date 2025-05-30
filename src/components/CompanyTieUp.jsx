@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import { ArrowRight } from "lucide-react"
 import logoIbm from "../assets/ibm.jpg"
-import logoTcs from "../assets/tcs.jpg"
+import logoTcs from "../assets/TCS.jpg"
 import logoCisco from "../assets/cisco.webp"
 import logoHdfc from "../assets/hdfc.png"
 
