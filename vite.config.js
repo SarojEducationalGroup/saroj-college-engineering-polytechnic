@@ -6,6 +6,6 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
   preview: {
-    allowedHosts: ['saroj-institute-tech-management.onrender.com']
+    allowedHosts: ['saroj-college-engineering-polytechnic.onrender.com']
   }
 })
